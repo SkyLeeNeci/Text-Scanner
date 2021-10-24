@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="karpenko.test.textscanner">
 
+    <uses-permission android:name="android.permission.CAMERA">
+
+    </uses-permission>
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,6 +22,9 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity">
+
         </activity>
     </application>
 
